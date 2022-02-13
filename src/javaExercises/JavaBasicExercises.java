@@ -281,20 +281,13 @@ Expected Output
             for (int j = 0; j < 46; j++) {
                 if (i < 9 && j < 13 && j % 2 == 1 && i % 2 == 1) {
                     flag[i][j] = "*";
-                }
-                else if (i < 9 && j < 14) {
+                } else if (i < 9 && j < 14) {
 
-                    if ( j % 2 == 0 && i % 2 == 0) {
+                    if (j % 2 == 0 && i % 2 == 0) {
                         flag[i][j] = "*";
                     } else flag[i][j] = " ";
 
-                }
-
-
-
-
-
-                else flag[i][j] = "=";
+                } else flag[i][j] = "=";
 
 
                 System.out.print(flag[i][j]);
@@ -304,16 +297,158 @@ Expected Output
         }
 
 
-// 15. Write a Java program to swap two variables. 
+// 15.Write a Java program to swap two variables.
+
+        int numbr = 25;
+        int numbr2 = 45;
+        numbr = numbr2 - numbr;
+        numbr2 = numbr2 - numbr;
+        numbr = numbr2 + numbr;
+        System.out.println("Number1 :" + numbr);
+        System.out.println("Number2 :" + numbr2);
+
+        // Diğer Yöntem
+        int nmr = 25;
+        int nmr2 = 45;
+        int repo = nmr;
+        nmr = nmr2;
+        nmr2 = repo;
+        System.out.println("Number1 :" + nmr);
+        System.out.println("Number2 :" + nmr2);
+
+
 //
-// 16. Write a Java program to print a face. 
-// Expected Output
-//  +"""""+
-// [| o o |]
-//  |  ^  |
-//  | '-' |
-//  +-----+
-//
+/* 16.Write a Java program to print a face.
+Expected Output
+ +"""""+
+[| o o |]
+ |  ^  |
+ | '-' |
+ +-----+
+*/
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 9; j++) {
+
+                switch (i) {
+                    case 0:
+                        switch (j) {
+
+                            case 1, 7:
+                                System.out.print("+");
+                                break;
+                            case 2, 3, 4, 5, 6:
+                                System.out.print("\"");
+                                break;
+                            default:
+                                System.out.print(" ");
+                                break;
+                        }
+                        break;
+                    case 1:
+                        switch (j) {
+                            case 0:
+                                System.out.print("\n" + "[");
+                                break;
+                            case 1, 7:
+
+                                System.out.print("|");
+                                break;
+                            case 3, 5:
+
+
+                                System.out.print("o");
+                                break;
+                            case 8:
+                                System.out.print("]");
+                                break;
+                            default:
+                                System.out.print(" ");
+                                break;
+
+                        }
+                        break;
+
+                    case 2:
+
+                        switch (j) {
+
+                            case 0:
+                                System.out.print("\n" + "");
+                                System.out.print(" ");
+                                break;
+                            case 1:
+
+                                System.out.print("|");
+                                break;
+                            case 4:
+                                System.out.print("^");
+                                break;
+                            case 7:
+                                System.out.print("|");
+                                break;
+                            default:
+                                System.out.print(" ");
+
+                        }
+                        break;
+
+                    case 3:
+                        switch (j) {
+                            case 0:
+                                System.out.print("\n" + "");
+                                System.out.print(" ");
+                                break;
+
+                            case 1:
+                                System.out.print("|");
+                                break;
+                            case 4:
+                                System.out.print("^");
+                                break;
+                            case 3, 5:
+
+
+                                System.out.print("'");
+                                break;
+                            case 7:
+                                System.out.print("|");
+                                break;
+                            default:
+                                System.out.print(" ");
+
+                        }
+                        break;
+
+                    case 4:
+                        switch (j) {
+                            case 0:
+                                System.out.print("\n" + "");
+                                System.out.print(" ");
+                                break;
+
+                            case 1:
+                                System.out.print("-");
+                                break;
+                            case 2, 3, 4, 5, 6:
+
+                                System.out.print("\"");
+                                break;
+                            case 7:
+                                System.out.print("-");
+                                break;
+                            default:
+                                System.out.print(" ");
+
+                        }
+                        break;
+
+
+                }
+            }
+
+        }
+
+
 // 17. Write a Java program to add two binary numbers. 
 // Input Data:
 // Input first binary number: 10
