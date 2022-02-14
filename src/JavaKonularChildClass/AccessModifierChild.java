@@ -19,6 +19,11 @@ public class AccessModifierChild extends AccessModifier {
         ulaşabilir.
         -- number2 - public variable
         */
+        obj.number1=45;
+        System.out.println(obj.number1);
+
+        /*Data'ya Acces Modifier olarak erişim hakkım varsa aynı zamanda değiştirebiliyorumdur.
+        *  */
     }
 
 
