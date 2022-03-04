@@ -11,7 +11,7 @@ public class Encapsulation2 {
         obj.butce = 430000;
         System.out.println(obj.butce);
         /* Access modifier ile erişiyorsam değiştirebilirim. Datayı private olarak tanımlarsan
-         buradan ulaşamayız. Datyı korumuş oluruz fakat dataya ulaşım sağlayamamış oluruz.
+         buradan ulaşamayız. Datayı korumuş oluruz fakat dataya ulaşım sağlayamamış oluruz.
          Bundan dolayı encapsulation kullanılır.*/
         System.out.println(obj.getProjeAsgariUcret());
        /* obj.projeAsgariUcret=4000;  private olduğu için ulaşamayız. obj.getProjeAsgariUcret()

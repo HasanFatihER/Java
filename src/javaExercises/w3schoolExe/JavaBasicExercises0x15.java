@@ -1,8 +1,9 @@
-package javaExercises;
-
+package javaExercises.w3schoolExe;
+//Java öğrencileri için örnek çalışmalar
 import java.util.Scanner;
-
-public class JavaBasicExercisesPart1 {
+// https://www.w3resource.com/java-exercises/basic/index.php
+// All questions is taken this link
+public class JavaBasicExercises0x15 {
     public static void main(String[] args) {
         //  Java Basic Exercises
 

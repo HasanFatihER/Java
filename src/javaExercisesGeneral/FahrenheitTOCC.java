@@ -1,11 +1,11 @@
-package OrnekSorular;
+package javaExercisesGeneral;
 
 import java.util.Scanner;
 
 /* { /// Task1 : Write a Java program to convert temperature from Fahrenheit
 to Celsius degree.
  */
-public class Ornek01 {
+public class FahrenheitTOCC {
     public static void main(String[] args) {
 
 
